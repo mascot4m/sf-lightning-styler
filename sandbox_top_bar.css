@@ -1,0 +1,5 @@
+/*Sandbox top page message smaller and different color*/
+.oneSystemMessage .system-message {
+    padding: .05rem !important;
+    background: rgb(255, 83, 53) !important;
+}

@@ -1,0 +1,10 @@
+/*Fields inline*/
+.test-id__field-label-container {
+    width: 50% !important;
+    float: left !important;
+    max-width: 300px !important;
+}
+/*Record header smaller*/
+.slds-page-header__detail-row {
+    padding: 0.5rem 1.5rem !important;
+}

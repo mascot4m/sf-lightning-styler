@@ -1,0 +1,51 @@
+/*Fields inline*/
+.test-id__field-label-container {
+    width: 50% !important;
+    float: left !important;
+    max-width: 300px !important;
+}
+/*Record header smaller*/
+.slds-page-header__detail-row {
+    padding: 0.5rem 1.5rem !important;
+}
+
+/*Path more square*/
+.runtime_sales_pathassistantPathAssistantHeader--desktop .stepAction, .runtime_sales_pathassistantPathAssistantTabSet--desktop .pa-tabBar ul, .runtime_sales_pathassistantPathAssistantTabSet--desktop .scroller, .runtime_sales_pathassistantPathAssistantHeader--desktop .stepAction:active {
+    border-radius: .25rem !important;
+}
+
+/*Sandbox top page message smaller and different color*/
+.oneSystemMessage .system-message {
+    padding: .05rem !important;
+    background: rgb(255, 83, 53) !important;
+}
+
+/*Activity tabs smaller*/
+.uiTabset--task .tabs__item>a {
+    padding: .5rem !important;
+}
+
+/*Activity tab input and button*/
+.forcePublisherQuickActionCollapser .dummyControlsContainer {
+    padding: .5rem !important;
+}
+
+/*Record page tabs*/
+.uiTabset--default .tabs__item>a {
+    padding: .2rem .4rem .2rem !important;
+}
+
+/*Related lists headers, News cards more compact*/
+.slds-card__header, .slds-card__footer {
+    padding-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.witsNewsCarouselItem.carouselView.articleDesktop {
+    padding: .4rem !important;
+}
+
+.slds-card__header, .slds-card__footer, .slds-card__body_inner, .slds-card__body--inner {
+    padding-left: .75rem !important;
+    padding-right: .75rem !important;
+}

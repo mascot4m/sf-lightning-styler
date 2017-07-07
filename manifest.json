@@ -1,0 +1,37 @@
+{
+
+  "name": "Salesforce Lightning Compact Styler",
+  "short_name" : "SF Lightning Compact Style",
+  "description": "Make your Salesforce Lightning experience more compact.",
+  "version": "0.0.4",
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "*://*.lightning.force.com/*"
+  ],
+
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": true
+  },
+
+  "browser_action": {
+    "default_icon": "icon_19.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "background": { "scripts": ["background.js"] },
+
+  "icons": {
+    "128": "icon_128.png",
+    "64": "icon_64.png",
+    "19": "icon_19.png"
+  },
+
+  "manifest_version": 2
+
+}

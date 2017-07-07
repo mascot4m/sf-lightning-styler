@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Salesforce Lightning Compact Style Options</title>
+    <style type="text/css">
+      body {
+        background-color: #193441;
+        font-size: 14px;
+        color: #FCFFF5;
+      }
+      #header {
+        margin: 5px;
+      }
+      .section-wrapper {
+        border-top: 1px solid #3E606F;
+        margin: 5px 0;
+        padding: 5px 0;
+      }
+      .option {
+        padding: 5px;
+      }
+      #status {
+        min-height: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+    <div id="header">
+      <img src="logo_header.png" height="70px">
+    </div>
+    <div id="content-inner-container">
+
+      <div id="status"> </div>
+
+      <div class="section-wrapper">
+        <div class="option">
+          <input type="checkbox" id="isActivated">
+          <label for="isActivated">Apply all compact styles</label>
+        </div>
+      </div>
+      <div class="section-wrapper">
+        <div class="option">
+          <input type="checkbox" id="fields_style" class="minor-style">
+          <label for="fields_style">Apply inline fields style</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="path_style" class="minor-style">
+          <label for="path_style">Apply square path style</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="sandbox_top_bar" class="minor-style">
+          <label for="sandbox_top_bar">Apply sandbox top bar style</label>
+        </div>
+      </div>        
+    </div>
+  </div>
+    <script src="options.js"></script>
+  </body>
+</html>
