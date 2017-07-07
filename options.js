@@ -2,7 +2,8 @@ function save_options() {
   var isActivated = document.getElementById('isActivated').checked;  
   var fields_style = document.getElementById('fields_style').checked;
   var path_style = document.getElementById('path_style').checked;
-  var sandbox_top_bar = document.getElementById('sandbox_top_bar').checked;
+  var sandbox_top_bar = document.getElementById('sandbox_top_bar').checked;  
+  var sandbox_top_bar = document.getElementById('header_bar').checked;
   chrome.storage.sync.set({
     isActivated: isActivated
   }, function() {
@@ -43,6 +44,16 @@ function save_options() {
       status.textContent = '';
     }, 2700);
   });
+  chrome.storage.sync.set({
+    header_bar: header_bar
+  }, function() {
+    // Update status to let user know options were saved.
+    var status = document.getElementById('status');
+    status.textContent = 'Options saved';
+    setTimeout(function() {
+      status.textContent = '';
+    }, 2700);
+  });
 }
 
 function restore_options() {
@@ -65,6 +76,11 @@ function restore_options() {
     sandbox_top_bar: true
   }, function(items) {
     document.getElementById('sandbox_top_bar').checked = items.sandbox_top_bar;
+  });  
+  chrome.storage.sync.get({
+    header_bar: true
+  }, function(items) {
+    document.getElementById('header_bar').checked = items.header_bar;
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

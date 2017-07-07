@@ -44,5 +44,14 @@ function do_something(tab) {
       });
     }
   });
+    chrome.storage.sync.get({
+      header_bar: true
+    }, function(items) {
+    if (items.header_bar) {
+      chrome.tabs.insertCSS(tab.id, {
+        file: "header_bar.css"
+      });
+    }
+  });
  }		
 }
