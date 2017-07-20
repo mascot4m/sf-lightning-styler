@@ -47,8 +47,61 @@ body {
     text-align: center;
 }
 
-#footer {
+#footer, #donate {
     color: #91AA9D;
-    padding-top: 20px;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 125%;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#donate a{
+    color: #383838;
+    font-size: large;
+    font-style: italic;
+    text-decoration: none;
 }

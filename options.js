@@ -3,7 +3,7 @@ function save_options() {
   var fields_style = document.getElementById('fields_style').checked;
   var path_style = document.getElementById('path_style').checked;
   var sandbox_top_bar = document.getElementById('sandbox_top_bar').checked;  
-  var sandbox_top_bar = document.getElementById('header_bar').checked;
+  var header_bar = document.getElementById('header_bar').checked;
   chrome.storage.sync.set({
     isActivated: isActivated
   }, function() {
