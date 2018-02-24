@@ -1,4 +1,4 @@
-#Salesforce Lightning Compact Styler - Chrome Extension
+# Salesforce Lightning Compact Styler - Chrome Extension
 
 >Salesforce Lightning COmpact Styler is Chrome and Firefox extension and is mainly about making the Lightning UI more compact and adding few small style upgrades here and there. The options are there for you to turn on and off different style changes, so you don't have to apply all of them necessarily.
 
