@@ -55,7 +55,6 @@ The extension is mainly about making the Lightning UI more compact and adding fe
 - [ ] Chreate repo for Firefox version
 - [ ] Add _Ideas/Suggestions_ link or functionality
 - [ ] Add link to this repo
-- [ ] Add link to extension home page, a.k.a. here
 
 ## :loudspeaker: Aknowledgment
 - Matej Badal - his coding experiese made this extension wokring
