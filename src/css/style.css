@@ -76,3 +76,8 @@
     background-color: #0070d2 !important;
     border-radius: 3px 3px 0 0 !important;
 }
+
+/*Main page component padding*/
+.slds-tabs_card, .slds-tabs_card.slds-tabs_card {
+    padding: 0.5rem !important;
+}

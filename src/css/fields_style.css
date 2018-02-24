@@ -12,3 +12,8 @@
 .slds-form-element.slds-form-element_edit.slds-grow.slds-hint-parent.slds-p-vertical_xx-small.override--slds-form-element:hover {
     background-color: #cdd9e733 !important;
 }
+
+/*Main page component padding*/
+.slds-tabs_card, .slds-tabs_card.slds-tabs_card {
+    padding: 0.5rem !important;
+}
