@@ -2,6 +2,7 @@ chrome.tabs.onCreated.addListener(do_something);
 chrome.tabs.onUpdated.addListener(function(tabId, info, tab) {
 	if (info.status == 'complete') do_something(tab);
 });
+chrome.runtime.setUninstallURL('https://goo.gl/forms/L7WzOQe7E6Ozc13V2');
 
 function do_something(tab) {
 	var tabUrl = tab.url; 
@@ -50,6 +51,24 @@ function do_something(tab) {
     if (items.header_bar) {
       chrome.tabs.insertCSS(tab.id, {
         file: "header_bar.css"
+      });
+    }
+  });
+    chrome.storage.sync.get({
+      tabs_style: true
+    }, function(items) {
+    if (items.tabs_style) {
+      chrome.tabs.insertCSS(tab.id, {
+        file: "tabs_style.css"
+      });
+    }
+  });
+    chrome.storage.sync.get({
+      modal_style: true
+    }, function(items) {
+    if (items.modal_style) {
+      chrome.tabs.insertCSS(tab.id, {
+        file: "modal_style.css"
       });
     }
   });

@@ -19,9 +19,23 @@
       .option {
         padding: 5px;
       }
+      label{
+        cursor: pointer;
+      }
       #status {
         min-height: 20px;
         text-align: center;
+      }
+      #donate a, #rate a{
+        color: #FCFFF5;
+        font-style: italic;
+        text-decoration: none;
+      }
+      #rate {
+        float: left;
+      }
+      #donate{
+        float: right;
       }
     </style>
   </head>
@@ -54,10 +68,27 @@
           <label for="sandbox_top_bar">Apply sandbox top bar style</label>
         </div>                
         <div class="option">
-          <input type="checkbox" id="header_bar">
+          <input type="checkbox" id="header_bar" class="minor-style">
           <label for="header_bar">Apply header compact style</label>
         </div>
-      </div>        
+        <div class="option">
+          <input type="checkbox" id="tabs_style" class="minor-style">
+          <label for="tabs_style">Apply tabs style</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="modal_style" class="minor-style">
+          <label for="modal_style">Apply modals style</label>
+        </div>
+      </div> 
+      <div class="section-wrapper">
+        <div id="rate">
+          <a href="https://chrome.google.com/webstore/detail/salesforce-lightning-comp/lifocmjdfnmbmdohhbnkhgaihheaickb/reviews" target="_blank">
+          <img src="rate_icon.png">Rate us!</a> 
+        </div>
+        <div id="donate">
+          <a href="https://www.paypal.me/MKrchnak/3" target="_blank"><img src="paypal_icon.png">Donate</a> 
+        </div>
+      </div>       
     </div>
   </div>
     <script src="options.js"></script>
