@@ -54,5 +54,23 @@ function do_something(tab) {
       });
     }
   });
+    chrome.storage.sync.get({
+      tabs_style: true
+    }, function(items) {
+    if (items.tabs_style) {
+      chrome.tabs.insertCSS(tab.id, {
+        file: "tabs_style.css"
+      });
+    }
+  });
+    chrome.storage.sync.get({
+      modal_style: true
+    }, function(items) {
+    if (items.modal_style) {
+      chrome.tabs.insertCSS(tab.id, {
+        file: "modal_style.css"
+      });
+    }
+  });
  }		
 }

@@ -1,0 +1,16 @@
+/*Tabs - active/hover highlight*/
+.uiTabset--default .tabs__item > a:hover, .uiTabset--default .tabs__item > a:focus {
+    border-color: rgb(0, 112, 210) !important;
+    color: rgb(254, 254, 254) !important;
+    background-color: #0070d2 !important;
+	border-radius: 3px 3px 0 0 !important;
+}
+.uiTabset--default .tabs__item.active > a:focus {
+    color: rgb(254, 254, 254) !important;
+}
+.uiTabset--default .tabs__item.active > a {
+    border-color: rgb(0, 112, 210) !important;
+    color: rgb(254, 254, 254) !important;
+    background-color: #0070d2 !important;
+	border-radius: 3px 3px 0 0 !important;
+}
