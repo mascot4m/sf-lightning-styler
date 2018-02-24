@@ -1,0 +1,15 @@
+/*Add Modal Style*/
+.forceMultiAddSearch .searchContainer {
+    padding: .2rem 0 !important;
+    min-height: none !important;
+}
+
+.slds-modal__header {
+    padding: .5rem !important;
+    text-align: center !important;
+}
+
+.forceMultiAddUsingLVM .slds-table tr, .forceMultiAddUsingLVM .slds-table td {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}

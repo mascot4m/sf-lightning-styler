@@ -3,7 +3,7 @@
   "name": "Salesforce Lightning Compact Styler",
   "short_name" : "SF Lightning Compact Style",
   "description": "Make your Salesforce Lightning experience more compact.",
-  "version": "0.0.5",
+  "version": "0.1.0",
 
   "permissions": [
     "tabs",
@@ -22,7 +22,7 @@
     "default_popup": "popup.html"
   },
 
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "content_security_policy": "script-src 'self'; object-src 'self'",
 
   "background": { "scripts": ["background.js"] },
 
