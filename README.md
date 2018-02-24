@@ -12,6 +12,9 @@ This is my first and coding experience and all is done mainly with my super-goog
 ```
 
 ## :ledger: Change log
+0.1.1
+- Update extension popup desing to make it less compact!
+- Some small updates in code and another exciting stuff.
 0.1.0
 - Add Product modal (and probably other modals) is now more compact.
 - Celebrating more than 300 daily users!
