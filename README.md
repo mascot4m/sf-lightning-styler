@@ -1,6 +1,6 @@
 # Salesforce Lightning Compact Styler - Chrome Extension
 
->Salesforce Lightning COmpact Styler is Chrome and Firefox extension and is mainly about making the Lightning UI more compact and adding few small style upgrades here and there. The options are there for you to turn on and off different style changes, so you don't have to apply all of them necessarily.
+>Salesforce Lightning Compact Styler is Chrome and Firefox extension and is mainly about making the Lightning UI more compact and adding few small style upgrades here and there. The options are there for you to turn on and off different style changes, so you don't have to apply all of them necessarily.
 
 ## :speech_balloon: Introduction
 When Salesforce Lightning was introduced, I was excited. I started working with Salesforce only less than a year before, and I thought nothing good about the Classic UI. Even the speed wasn't that good for such UI. Then I watched Lightning announcement at Dreamforce, and I was immediately looking forward to my first project where I will implement Lightning. That project finally came in April 2017. I realized that Lightning has still vast space for improvement but from a design point of view to me it was a massive leap from Classic UI. I couldn't do much for Lightning performance, but I thought I could improve the design little bit. So I started working on this extension as my first coding project. It makes my Lightning experience even better, and I hope it does the same for you.
@@ -43,9 +43,9 @@ This is my first and coding experience and all is done mainly with my super-goog
 ## :mailbox: TODO
 - [ ] Update design of options to match SLDS
 - [ ] Chreate repo for Firefox version
-- [ ] Add _Ideas/Suggestions_ link
+- [ ] Add _Ideas/Suggestions_ link or functionality
 - [ ] Add link to this repo
-- [ ] Add link to extension home page http://sentaga.com/salesforce-lightning-compact-styler/
+- [ ] Add link to extension home page, a.k.a. here
 
 ## :loudspeaker: Aknowledgment
 - Matej Badal - his coding experiese made this extension wokring
