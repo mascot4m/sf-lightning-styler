@@ -7,9 +7,7 @@ When Salesforce Lightning was introduced, I was excited. I started working with 
 
 The extension is mainly about making the Lightning UI more compact and adding few small style upgrades here and there. The options are there for you to turn on and off different style changes, so you don't have to apply all of them necessarily.
 
-```
-This is my first and coding experience and all is done mainly with my super-google-programming skills and help of friends. I will add a link to a git repo, so you can suggest any coding improvements you could think off.
-```
+>This is my first and coding experience and all is done mainly with my super-google-programming skills and help of friends. I will add a link to a git repo, so you can suggest any coding improvements you could think off.
 
 ## :ledger: Change log
 0.1.1
