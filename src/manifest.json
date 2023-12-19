@@ -1,31 +1,33 @@
 {
-
   "name": "Salesforce Lightning Compact Styler",
-  "short_name" : "SF Lightning Compact Styler",
+  "short_name": "SF Lightning Compact Styler",
   "description": "Make your Salesforce Lightning experience more compact.",
-  "version": "0.1.1",
+  "version": "0.2.0",
 
-  "permissions": [
-    "tabs",
-    "storage",
-    "*://*.lightning.force.com/*"
-  ],
+  "permissions": ["tabs", "storage", "scripting"],
+  "host_permissions": ["*://*.lightning.force.com/*"],
 
   "options_ui": {
     "page": "options.html",
-    "chrome_style": true,
     "open_in_tab": true
   },
 
-  "browser_action": {
-    "default_icon": "images/icon_19.png",
+  "action": {
+    "default_icon": {
+      "16": "images/icon_19.png"
+    },
     "default_title": "SF Styler Options",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html" 
   },
 
-  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
 
-  "background": { "scripts": ["js/background.js"] },
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
 
   "icons": {
     "128": "images/icon_128.png",
@@ -33,6 +35,5 @@
     "19": "images/icon_19.png"
   },
 
-  "manifest_version": 2
-
+  "manifest_version": 3
 }

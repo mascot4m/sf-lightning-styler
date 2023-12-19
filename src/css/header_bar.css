@@ -1,10 +1,13 @@
 /*Header inline style*/
-.slds-text-heading_label-normal, .slds-text-heading--label-normal {
-    float: left;
-    padding: 2px 10px 0 0 !important;
+.highlights.slds-clearfix.slds-page-header.slds-page-header_record-home {
+    padding: 0.3rem !important;
 }
 
-/*Record header smaller*/
-.slds-page-header__detail-row {
-    padding: 0.5rem 1.5rem 0.4rem !important;
+/* Cards spacing */
+.slds-card__header.slds-grid.slds-m-bottom--none {
+    padding: 0.2rem !important;
+}
+
+flexipage-component2 {
+    margin-bottom: 0.2rem !important;
 }

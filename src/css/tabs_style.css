@@ -1,26 +1,5 @@
 /*Tabs - active/hover highlight*/
-.uiTabset--default .tabs__item > a:hover, .uiTabset--default .tabs__item > a:focus {
-    border-color: rgb(0, 112, 210) !important;
-    color: rgb(254, 254, 254) !important;
-    background-color: #0070d2 !important;
-	border-radius: 3px 3px 0 0 !important;
-}
-
-.uiTabset--default .tabs__item.active > a:focus {
-    color: rgb(254, 254, 254) !important;
-
-}
-.uiTabset--default .tabs__item.active > a {
-    border-color: rgb(0, 112, 210) !important;
-    color: rgb(254, 254, 254) !important;
-    background-color: #0070d2 !important;
-	border-radius: 3px 3px 0 0 !important;
-}
-
-.uiTabset--default .tabs__item>a, .uiTabset--default .uiTabOverflowMenuItem a {
-    padding: 1rem .5rem 0.2rem !important;
-}
-
-.flexipageTabset>.uiTabBar .uiTabItem .tabHeader, .flexipageTabset>.uiTabBar .uiTabOverflowMenuItem .uiPopupTrigger a {
-    padding-top: .2rem !important;
+li.slds-tabs_default__item.slds-is-active {
+    background-color: var(--slds-c-tabs-item-color-border-active, var(--sds-c-tabs-item-color-border-active, var(--lwc-brandPrimary, rgb(27, 150, 255))));
+    color: white;
 }
