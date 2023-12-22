@@ -2,102 +2,58 @@
 <html>
 
 <head>
-<!-- SLDS CSS -->
-<link rel="stylesheet" href="slds/styles/salesforce-lightning-design-system.min.css">
-<!-- SLDS JavaScript (if needed) -->
-<script src="slds/scripts/vendor/modernizr.js"></script>
-<script src="slds/scripts/vendor/moment.js"></script>
-<script src="slds/scripts/vendor/jquery.min.js"></script>
-<script src="slds/scripts/vendor/jquery.mobile.custom.min.js"></script>
-<script src="slds/scripts/vendor/bootstrap.min.js"></script>
-  <title>Salesforce Lightning Compact Style Options</title>
+    <!-- SLDS CSS -->
+    <link rel="stylesheet" href="slds/styles/salesforce-lightning-design-system.min.css">
+    <!-- SLDS JavaScript (if needed) -->
+    <script src="slds/scripts/vendor/modernizr.js"></script>
+    <script src="slds/scripts/vendor/moment.js"></script>
+    <script src="slds/scripts/vendor/jquery.min.js"></script>
+    <script src="slds/scripts/vendor/jquery.mobile.custom.min.js"></script>
+    <script src="slds/scripts/vendor/bootstrap.min.js"></script>
+    <title>Salesforce Lightning Compact Style Options</title>
 
-  <style type="text/css">
-    body{
-      width: 250px;
-      background-color: #012A43;
-    }
-  </style>
+    <style type="text/css">
+        body {
+            width: 250px;
+            background-color: #012A43;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    </style>
 </head>
 
 <body>
-  
-  <div id="content">
-    <div id="header">
-      <img src="images/logo_header.png">
-    </div>
-    <div class="slds-m-around_small">
+    <div id="content">
+        <div id="header">
+            <img src="images/logo_header.png">
+        </div>
+        <div class="slds-m-around_small">
+            <!-- Existing Checkbox Options Here -->
 
-        <div class="slds-form-element slds-p-bottom_x-small">
-          <label class="slds-checkbox_toggle slds-grid">
-            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Inline Fields Style</span>
-            <input type="checkbox" id="fields_style" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
-            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
-              <span class="slds-checkbox_faux"></span>
-              <span class="slds-checkbox_on"></span>
-              <span class="slds-checkbox_off"></span>
-            </span>
-          </label>
         </div>
-        <div class="slds-form-element slds-p-bottom_x-small">
-          <label class="slds-checkbox_toggle slds-grid">
-            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Sandbox Top Bar Style</span>
-            <input type="checkbox" id="sandbox_top_bar" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
-            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
-              <span class="slds-checkbox_faux"></span>
-              <span class="slds-checkbox_on"></span>
-              <span class="slds-checkbox_off"></span>
-            </span>
-          </label>
+        <div class="slds-p-around_small button-group">
+            <!-- Report Bug Button -->
+            <button class="slds-button slds-button_neutral">
+                <img src="images/bug_icon.png"> Report Bug
+            </button>
+            <!-- Feature Request Button -->
+            <button class="slds-button slds-button_neutral">
+                <img src="images/feature_request_icon.png"> Feature Request
+            </button>
+            <!-- Rate Us Link -->
+            <a href="https://chrome.google.com/webstore/detail/salesforce-lightning-comp/lifocmjdfnmbmdohhbnkhgaihheaickb/reviews" target="_blank" class="slds-button slds-button_neutral">
+                <img src="images/rate_icon.png"> Rate us!
+            </a>
+            <!-- Donate Link -->
+            <a href="https://www.paypal.me/MKrchnak/3" target="_blank" class="slds-button slds-button_neutral">
+                <img src="images/paypal_icon.png"> Donate
+            </a>
         </div>
-        <div class="slds-form-element slds-p-bottom_x-small">
-          <label class="slds-checkbox_toggle slds-grid">
-            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Header Compact Style</span>
-            <input type="checkbox" id="header_bar" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
-            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
-              <span class="slds-checkbox_faux"></span>
-              <span class="slds-checkbox_on"></span>
-              <span class="slds-checkbox_off"></span>
-            </span>
-          </label>
-        </div>
-        <div class="slds-form-element slds-p-bottom_x-small">
-          <label class="slds-checkbox_toggle slds-grid">
-            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Tabs Style</span>
-            <input type="checkbox" id="tabs_style" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
-            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
-              <span class="slds-checkbox_faux"></span>
-              <span class="slds-checkbox_on"></span>
-              <span class="slds-checkbox_off"></span>
-            </span>
-          </label>
-        </div>
-        <div class="slds-form-element slds-p-bottom_x-small">
-          <label class="slds-checkbox_toggle slds-grid">
-            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Modals Style</span>
-            <input type="checkbox" id="modal_style" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
-            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
-              <span class="slds-checkbox_faux"></span>
-              <span class="slds-checkbox_on"></span>
-              <span class="slds-checkbox_off"></span>
-            </span>
-          </label>
-        </div>
-
-      </div>
-      <div class="slds-p-around_small">
-        <div id="rate">
-          <a href="https://chrome.google.com/webstore/detail/salesforce-lightning-comp/lifocmjdfnmbmdohhbnkhgaihheaickb/reviews" target="_blank">
-            <img src="images/rate_icon.png">Rate us!</a>
-        </div>
-        <div id="donate">
-          <a href="https://www.paypal.me/MKrchnak/3" target="_blank">
-            <img src="images/paypal_icon.png">Donate</a>
-        </div>
-      </div>
     </div>
-  </div>
-  <script src="js/options.js"></script>
+    <script src="js/options.js"></script>
 </body>
 
 </html>
