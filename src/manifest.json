@@ -14,7 +14,7 @@
 
   "action": {
     "default_icon": {
-      "16": "images/icon_19.png"
+      "16": "images/icon_16.png"
     },
     "default_title": "SF Styler Options",
     "default_popup": "popup.html" 
@@ -31,8 +31,8 @@
 
   "icons": {
     "128": "images/icon_128.png",
-    "64": "images/icon_64.png",
-    "19": "images/icon_19.png"
+    "64": "images/icon_48.png",
+    "19": "images/icon_16.png"
   },
 
   "manifest_version": 3

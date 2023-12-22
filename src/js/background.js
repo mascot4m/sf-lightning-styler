@@ -17,7 +17,7 @@ function do_something(tab) {
   if (tabUrl && tabUrl.indexOf(".lightning.force.com") !== -1) {
     chrome.storage.sync.get(
       {
-        isActivated: true,
+        all_styles: true,
         fields_style: true,
         path_style: true,
         sandbox_top_bar: true,
@@ -26,7 +26,7 @@ function do_something(tab) {
         modal_style: true,
       },
       function (items) {
-        if (items.isActivated) {
+        if (items.all_styles) {
           chrome.scripting.insertCSS({
             target: { tabId: tab.id },
             files: ["css/style.css"],

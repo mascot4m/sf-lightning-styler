@@ -2,171 +2,90 @@
 <html>
 
 <head>
+<!-- SLDS CSS -->
+<link rel="stylesheet" href="slds/styles/salesforce-lightning-design-system.min.css">
+<!-- SLDS JavaScript (if needed) -->
+<script src="slds/scripts/vendor/modernizr.js"></script>
+<script src="slds/scripts/vendor/moment.js"></script>
+<script src="slds/scripts/vendor/jquery.min.js"></script>
+<script src="slds/scripts/vendor/jquery.mobile.custom.min.js"></script>
+<script src="slds/scripts/vendor/bootstrap.min.js"></script>
   <title>Salesforce Lightning Compact Style Options</title>
+
   <style type="text/css">
-    body {
-      background-color: #193441;
-      font-size: 15px;
-      color: #FCFFF5;
-    }
-
-    #header {
-      margin: 5px;
-    }
-
-    .section-wrapper {
-      border-top: 1px solid #3E606F;
-      margin: 5px 0;
-      padding: 5px 0;
-    }
-
-    .option {
-      padding: 10px 5px;
-    }
-
-    label {
-      cursor: pointer;
-    }
-
-    #status {
-      min-height: 20px;
-      text-align: center;
-    }
-
-    #donate a,
-    #rate a {
-      color: #FCFFF5;
-      font-style: italic;
-      text-decoration: none;
-    }
-
-    #rate {
-      float: left;
-    }
-
-    #donate {
-      float: right;
-    }
-
-    input[type="checkbox"] {
-      display: none;
-    }
-
-    input[type="checkbox"]+label {
-      background-color: #FFF;
-      padding-right: 9px;
-      display: inline-block;
-      position: relative;
-      margin-right: 10px;
-      background: #F7836D;
-      width: 39px;
-      height: 18px;
-      }
-
-    input[type="checkbox"]+label:before {
-      content: ' ';
-      position: absolute;
-      background: #FFF;
-      top: -1px;
-      z-index: 99999;
-      left: 0px;
-      width: 19px;
-      color: #FFF;
-      height: 20px;
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
-    }
-
-    input[type="checkbox"]+label:after {
-      content: 'OFF';
-      position: absolute;
-      top: 7px;
-      left: 32px;
-      font-size: .8em;
-      color: white;
-      font-weight: bold;
-      top: 1px;
-      border-radius: 100px;
-    }
-
-    input[type="checkbox"]:checked+label {
-      background: #67A5DF;
-    }
-
-    input[type="checkbox"]:checked+label:after {
-      content: 'ON';
-      left: 6px;
-    }
-
-    input[type="checkbox"]:checked+label:before {
-      content: ' ';
-      position: absolute;
-      z-index: 99999;
-      left: 30px;
-    }
-
-
-    input[type="checkbox"]+label:after {
-      left: 22px;
-    }
-
-    input[type="checkbox"]+label:after,
-    input[type="checkbox"]+label:before,
-    input[type="checkbox"] label {
-      -webkit-transition: all 0.1s ease-in;
-      transition: all 0.1s ease-in;
+    body{
+      width: 250px;
+      background-color: #012A43;
     }
   </style>
 </head>
 
 <body>
+  
   <div id="content">
     <div id="header">
-      <img src="images/logo_header.png" height="70px">
+      <img src="images/logo_header.png">
     </div>
-    <div id="content-inner-container">
+    <div class="slds-m-around_small">
 
-      <div id="status"> </div>
+        <div class="slds-form-element slds-p-bottom_x-small">
+          <label class="slds-checkbox_toggle slds-grid">
+            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Inline Fields Style</span>
+            <input type="checkbox" id="fields_style" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
+            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
+              <span class="slds-checkbox_faux"></span>
+              <span class="slds-checkbox_on"></span>
+              <span class="slds-checkbox_off"></span>
+            </span>
+          </label>
+        </div>
+        <div class="slds-form-element slds-p-bottom_x-small">
+          <label class="slds-checkbox_toggle slds-grid">
+            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Sandbox Top Bar Style</span>
+            <input type="checkbox" id="sandbox_top_bar" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
+            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
+              <span class="slds-checkbox_faux"></span>
+              <span class="slds-checkbox_on"></span>
+              <span class="slds-checkbox_off"></span>
+            </span>
+          </label>
+        </div>
+        <div class="slds-form-element slds-p-bottom_x-small">
+          <label class="slds-checkbox_toggle slds-grid">
+            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Header Compact Style</span>
+            <input type="checkbox" id="header_bar" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
+            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
+              <span class="slds-checkbox_faux"></span>
+              <span class="slds-checkbox_on"></span>
+              <span class="slds-checkbox_off"></span>
+            </span>
+          </label>
+        </div>
+        <div class="slds-form-element slds-p-bottom_x-small">
+          <label class="slds-checkbox_toggle slds-grid">
+            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Tabs Style</span>
+            <input type="checkbox" id="tabs_style" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
+            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
+              <span class="slds-checkbox_faux"></span>
+              <span class="slds-checkbox_on"></span>
+              <span class="slds-checkbox_off"></span>
+            </span>
+          </label>
+        </div>
+        <div class="slds-form-element slds-p-bottom_x-small">
+          <label class="slds-checkbox_toggle slds-grid">
+            <span class="slds-form-element__label slds-m-bottom_none slds-text-color_inverse-weak">Modals Style</span>
+            <input type="checkbox" id="modal_style" name="checkbox-toggle-20" value="checkbox-toggle-20" aria-describedby="checkbox-toggle-20" class="minor-style"/>
+            <span id="checkbox-toggle-20" class="slds-checkbox_faux_container">
+              <span class="slds-checkbox_faux"></span>
+              <span class="slds-checkbox_on"></span>
+              <span class="slds-checkbox_off"></span>
+            </span>
+          </label>
+        </div>
 
-      <div class="section-wrapper">
-        <div class="option">
-          <input type="checkbox" id="isActivated">
-          <label for="isActivated"></label>
-          <span>Apply All Styles</span>
-        </div>
       </div>
-      <div class="section-wrapper">
-        <div class="option">
-          <input type="checkbox" id="fields_style" class="minor-style">
-          <label for="fields_style"></label>
-          <span>Inline Fields Style</span>
-        </div>
-        <div class="option">
-          <input type="checkbox" id="path_style" class="minor-style">
-          <label for="path_style"></label>
-          <span>Square Path Style</span>
-        </div>
-        <div class="option">
-          <input type="checkbox" id="sandbox_top_bar" class="minor-style">
-          <label for="sandbox_top_bar"></label>
-          <span>Sandbox Top Bar Style</span>
-        </div>
-        <div class="option">
-          <input type="checkbox" id="header_bar" class="minor-style">
-          <label for="header_bar"></label>
-          <span>Header Compact Style</span>
-        </div>
-        <div class="option">
-          <input type="checkbox" id="tabs_style" class="minor-style">
-          <label for="tabs_style"></label>
-          <span>Tabs Style</span>
-        </div>
-        <div class="option">
-          <input type="checkbox" id="modal_style" checked />
-          <label for="modal_style"></label>
-          <span>Modals Style</span>
-        </div>
-      </div>
-      <div class="section-wrapper">
+      <div class="slds-p-around_small">
         <div id="rate">
           <a href="https://chrome.google.com/webstore/detail/salesforce-lightning-comp/lifocmjdfnmbmdohhbnkhgaihheaickb/reviews" target="_blank">
             <img src="images/rate_icon.png">Rate us!</a>
